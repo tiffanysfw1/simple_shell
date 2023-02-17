@@ -15,6 +15,7 @@ extern char **environ;
 extern __sighandler_t signal(int __sig, __sighandler_t __handler);
 /* handle built ins */
 int checker(char **cmd, char *buf);
+void _puts(char *str);
 void prompt_user(void);
 void handle_signal(int m);
 char **tokenizer(char *line);
