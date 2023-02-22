@@ -11,6 +11,10 @@
 #include <time.h>
 #include <stdbool.h>
 /* environment variables */
+void execute(char **command, char *name, char **env, int cicles);
+void print_env(char **env);
+char **_getPATH(char **env);
+void msgerror(char *name, int cicles, char **command);
 extern char **environ;
 extern __sighandler_t signal(int __sig, __sighandler_t __handler);
 /* handle built ins */
